@@ -46,38 +46,22 @@
                             <form name="message-form">
 
 
-                            <table>
-                                <tr>
-                                    <td>Nama </td>
-                                    <td>:</td>
-                                    <td><input type= "text" id="name" name="name" placeholder="Nama Lengkap"></td>
-                                </tr>
-
-
-                                <tr>
-                                    <td>Tanggal Lahir</td>
-                                    <td>:</td>
-                                    <td><input type= "date" id="date" name="date"></td>
-                                </tr>
-                                <tr>
-                                    <td>Jenis Kelamin</td>
-                                    <td>:</td>
-                                    <td><input type= "radio" id="male" name="gender" value="Laki-laki">
-                                        <label for="male">Laki-laki</label><br />
-                                        <input type= "radio" id="female" name="gender" value="Perempuan">
-                                        <label for="female">Perempuan</label><br /></td>
-                                </tr>
-                                <tr>
-                                    <td>Pesan</td>
-                                    <td>:</td>
-                                    <td><textarea id="message" name="message" placeholder="Pesan..."></textarea></td>
-                                </tr>
-                                <tr>
-                                    <td><input type = "button" onclick="validateForm()" value="submit" class="button submit-button"></td>
+                                <label for="name">Nama</label><br />
+                                <input type= "text" id="name" name="name" placeholder="Nama Lengkap"><br />
                                     
-                                </tr>
-
-                            </table>
+                                <label for="name">Tanggal Lahir</label><br />
+                                <input type= "date" id="date" name="date"></td><br />
+    
+                                <label for="male">Jenis Kelamin</label><br />
+                                <input type= "radio" id="male" name="gender" value="Laki-laki">                    
+                                <label for="male">Laki-laki</label><br />
+                                <input type= "radio" id="female" name="gender" value="Perempuan">
+                                <label for="female">Perempuan</label><br />
+    
+                                 <label for="message">Pesan</label><br />
+                                 <textarea id="message" name="message" placeholder="Pesan..."></textarea><br />
+                               
+                                <input type = "button" onclick="validateForm()" value="submit" class="button submit-button">
                                         
                             </form>
                         
