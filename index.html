@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Homepage</title>
+
+</head>
+
+
+<body>
+    <!-- Header -->
+    <div class="page-padding"> 
+    
+    <header>
+        <div class="header">
+            <a href="index.html"><img class="header-logo" src="assets/logo.png" alt=""></a>
+            <div class="header-nav">
+                <a class="active" href="#home" id="home">Home</a>
+                <a href="ourProfile.html" id="our-profile">Our Profile</a>
+                <a href="https://www.behance.net/tamatan" id="portofolio">Portofolio</a>
+                <a  href="messageUs.html"id="message-us">Message Us</a>
+            </div>
+        </div>
+        
+    </header>
+
+    </div>
+
+
+   
+    <!-- Main -->
+    
+    <div>  
+        <section id="hero">
+            
+            <div class="container">
+                
+                <div class="hero">
+                    <div class="page-padding"> 
+                    <h1>Hi <span id="fname"></span>, Welcome to Our Website!</h1>
+                    <p>Ini adalah website laman pertama</p>
+                    <div class="hero-gallery">
+                    <img class="hero-img" src="assets/banner1.jpg" alt="hero-image">
+                    </div>
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+
+        <script>
+            var fname = prompt ("Masukan Nama Kamu");
+            document.getElementById("fname").innerText = fname;
+        </script>
+        
+        <div class="page-break"><div class="page-break-rad"></div></div>
+        
+        <section id="hq">
+            <div class="page-padding"> 
+            <div class="container"> 
+                <div class="hq-head">
+                    <h1 class="hq-title">Our Headquarter</h1>
+                    <div class="hq-gallery"> 
+
+                        <a href="https://www.instagram.com/revou_id/" target="_blank"><img class="city-img" src="assets/city1.png" alt=""> <h3 class="hq-link"> Jakarta </h3></a>
+                        <a href="https://www.instagram.com/revou_id/" target="_blank"><img class="city-img" src="assets/city2.png" alt=""> <h3 class="hq-link"> Bandung </h3></a>
+                        <a href="https://www.instagram.com/revou_id/" target="_blank"><img class="city-img" src="assets/city3.png" alt=""> <h3 class="hq-link"> Surabaya </h3></a>
+                       
+                    </div>
+                </div>     
+            </div>
+            </div>
+        </section>  
+    </div>
+
+
+    <section id="form">
+            <div class="page-padding">
+                <div class="form-container">
+                    <div class="form-input">
+                        <form name="message-form">
+
+
+                        <table>
+                            <tr>
+                                <td>Nama </td>
+                                <td>:</td>
+                                <td><input type= "text" id="name" name="name" placeholder="Nama Lengkap"></td>
+                            </tr>
+
+
+                            <tr>
+                                <td>Tanggal Lahir</td>
+                                <td>:</td>
+                                <td><input type= "date" id="date" name="date"></td>
+                            </tr>
+                            <tr>
+                                <td>Jenis Kelamin</td>
+                                <td>:</td>
+                                <td><input type= "radio" id="male" name="gender" value="Laki-laki">
+                                    <label for="male">Laki-laki</label><br />
+                                    <input type= "radio" id="female" name="gender" value="Perempuan">
+                                    <label for="female">Perempuan</label><br /></td>
+                            </tr>
+                            <tr>
+                                <td>Pesan</td>
+                                <td>:</td>
+                                <td><textarea id="message" name="message" placeholder="Pesan..."></textarea></td>
+                            </tr>
+                            <tr>
+                                <td><input type = "button" onclick="validateForm()" value="submit" class="button submit-button"></td>
+                                
+                            </tr>
+
+                        </table>
+                                    
+                        </form>
+                    
+                    <script>
+                        function validateForm(e){
+                            var name= document.forms["message-form"]["name"].value;
+                            document.getElementById("sender-name").innerText = name;   
+                            var date= document.forms["message-form"]["date"].value;
+                            document.getElementById("sender-date").innerText = date; 
+                            var gender= document.forms["message-form"]["gender"].value;
+                            document.getElementById("sender-gender").innerText = gender;
+                            var message= document.forms["message-form"]["message"].value;
+                            document.getElementById("sender-message").innerText = message;
+                        }
+                    </script>
+    
+    
+                    </div>
+                    <div class="form-output">
+                        <p>Nama : <span id="sender-name"></span></p>
+                        <p>Tanggal Lahir : <span id="sender-date"></span></p>
+                        <p>Jenis Kelamin : <span id="sender-gender"></span></p>
+                        <p>Pesan : <span id="sender-message"></span></p>
+
+                        
+  
+                    </div>
+                </div>
+                
+                
+            </div>
+    </section>
+    
+
+
+    
+
+<footer>
+    <div class="footer_above-row">
+        <div class="above-left-column">
+            <img class="footer-logo" src="assets/logo.png">
+        </div>
+        <div class="above-left2-column">
+            <div>
+                <h3>FULL PROGRAMS</h3>
+                <p>Digital Marketing</p>
+                <p>Data Analytics</p>
+                <p>Product Management</p>
+                <p>Software Engineering</p>
+                
+            </div>
+
+        </div>
+        <div class="above-mid-column">
+            <div>
+                <h3>INTRO PROGRAMS</h3>
+                <p>Digital Marketing</p>
+                <p>Data Analytics</p>
+                <p>Product Management</p>
+                <p>Software Engineering</p>
+            </div>
+
+        </div>
+        
+        <div class="above-right-column">
+            <div>
+                <h3>REVOUPEDIA</h3>
+                <p>Panduan Karir</p>
+                <p>Panduan Teknis</p>
+                <p>Kosakata</p>
+            
+            
+            </div>
+
+        </div>
+        <div class="SERTIFIKASI 101">
+            <div>
+                <h3>Full Programs</h3>
+                <p>Digital Marketing</p>
+                <p>Data Analytics</p>
+                <p>Product Management</p>
+                <p>Software Engineering</p>
+            
+            </div>
+
+        </div>
+        
+    </div>
+    <div class="footer_bottom-row">
+        <div class="footer_bottom-left-column">
+          <div class="footer_copyright">© 2022 PT Revolusi Cita Edukasi. <br>All Rights Reserved</div>
+        </div>
+        <div class="footer_bottom-center-column">
+          <div class="footer_email text-align-center mobile-text-right">More Questions? Email us at <br><a href="mailto:admission@revou.co"><span class="footer_email-span">admissions@revou.co</span></a></div>
+        </div>
+        <div class="footer_bottom-right-column">
+            
+            <a href="https://www.instagram.com/revou_id/" target="_blank" class="footer-social"><img src="https://assets.website-files.com/61af164800e38c4f53c60b4e/61af164800e38c6a04c60ba3_instagram%20footer.svg" loading="lazy" alt="" class="footer_logo-instagram"></a>
+            <a href="https://www.linkedin.com/school/revou/" target="_blank" class="footer-social"><img src="https://assets.website-files.com/61af164800e38c4f53c60b4e/61af164800e38c060fc60ba7_linkedin%20footer.svg" loading="lazy" alt="" class="footer_logo-linkedin"></a>
+            <a href="https://twitter.com/revoudotco" target="_blank" class="footer-social"><img src="https://assets.website-files.com/61af164800e38c4f53c60b4e/61af164800e38cd880c60ba4_twitter%20footer.svg" loading="lazy" alt="" class="footer_logo-twitter"></a>
+            <a href="https://www.youtube.com/c/revoudotco" target="_blank" class="footer-social"><img src="https://assets.website-files.com/61af164800e38c4f53c60b4e/627cb8ac395b0eb98ed3b5c0_1.png" loading="lazy" alt="" class="footer_logo-youtube"></a>
+    </div>
+</footer>
+
+</body>
+</html>

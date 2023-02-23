@@ -1,0 +1,409 @@
+.container {
+  padding: 0px;
+}
+
+body {
+  font-family: 'Rosa Sans', sans-serif;
+  color: #000000;
+  font-size: 0.938rem;
+  line-height: 1.5;
+  margin: 10px 0 0 0 ;
+}
+
+
+.page-padding {
+  overflow: visible;
+  padding-right: 50px;
+  padding-left: 50px;
+}
+
+/* Header */
+.header{
+  display: flex;
+  padding: 0px 20px 0px 20px;
+  justify-content: space-between;
+}
+
+.header-logo {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+}
+
+.header-nav {
+  background-color: #ffffff;
+  overflow: hidden;
+}
+
+.header-nav a {
+  float: left;
+  color: #000000;
+  text-align: center;
+  padding: 15px 10px 15px 10px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.header-nav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.header-nav a.active {
+  background-color: #fede3e;
+  color: black;
+}
+
+/* Main */
+
+.hero {
+  background-color: #f8f7f5;
+  padding: 10px 50px 0 50px;
+}
+
+.hero-gallery {
+  justify-content: center;
+  display: flex;
+}
+
+.hero-img {
+  width: 1084px;
+  height: 632px;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  
+}
+
+/* Profile section */
+
+.profile-title {
+  font-size: 50px;
+}
+
+
+.program-title {
+  color: #ffffff;
+  text-align: center;
+}
+
+.program-section {
+  background-color: #2f2f2f;
+  padding: 10px 100px 20px 100px;
+  
+
+}
+
+.program-gallery {
+  display: flex;
+  justify-content: space-between;
+}
+
+.program-card{
+  background-color: #ffffff;
+  width: 250px;
+  height: 400px;
+  display: grid;
+  justify-items: center;
+  padding: 20px 10px 20px 10px;
+  margin: 10px;
+  border-radius: 10px;
+  
+
+}
+
+.program-img{
+  width: 200px;
+  height: 200px;
+}
+
+.about{
+  background-color: #fff4bd;
+  width: 100%;
+  height: 500px;
+
+}
+
+.about-padding {
+  padding: 0 150px 0 150px;
+}
+
+.about-title{
+  
+  text-align: center;
+
+}
+
+.about-title h1{
+  padding: 20px;
+  font-size: 30px;
+}
+
+.vision{
+  background-color: #ddd;
+  border-radius: 50px 50px 0 0;
+  width: 100%;
+  height: 800px;
+
+}
+
+.vision-padding {
+  padding: 0 150px 0 150px;
+}
+
+.vision-title{
+  
+  
+  text-align: center;
+
+}
+
+.vision-title h1{
+  padding: 20px;
+  font-size: 40px;
+
+}
+
+.vision-card {
+  background-color: #ffffff;
+  margin: 20px;
+  width: 900px;
+  height: 150px;
+  border-radius: 20px;
+  display: flex;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 10px;
+}
+
+.vision-img {
+  height:80px; 
+  width: 80px;
+  padding: 20px;
+  background-color: #fede3e;
+  border-radius: 50%;
+  margin: 10px 20px 0 10px;
+}
+
+
+
+.about-message {
+  padding-top: 80px;
+  align-content: center;
+  display: flex;
+}
+.about-message a {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.button2{
+  background-color: #ffffff; 
+  width: 300px;
+  height: 55px;
+  border: none;
+  border-radius: 60px;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+
+}
+
+
+
+.message-button {
+background-color: #fede3e; 
+color: black; 
+}
+
+.message-button:hover {
+  background-color: #000000;
+  color: #fede3e;
+}
+
+
+
+
+/* Profile End */
+
+.page-break {
+  width: 100%;
+  height: 300px;
+  background: rgb(248,247,245);
+  background: linear-gradient(180deg, rgba(248,247,245,1) 50%, rgba(255,255,255,1) 100%); 
+}
+.page-break-rad {
+  border-radius: 2.625rem;
+  width: 100%;
+  height: 300px;
+  background-color: #f6f7fc;
+  
+  
+}
+
+.hq-head {
+text-align: center;
+}
+
+.hq-gallery {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 500px;
+  margin-right: 500px;
+}
+
+.city-img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    background-color: #fede3e;
+}
+
+.hq-link {
+  color: #000000;
+  text-decoration: underline #ffffff;
+}
+
+
+.form-padding {
+  padding-top: 5px;
+}
+
+.form-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 150px 20px 150px;
+  background-color: #fede3e;
+}
+
+.form-container-msg {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 150px 20px 150px;
+  background-color: #fede3e;
+  border-radius: 20px;
+}
+
+.form-input{
+  width: 500px;
+  height:450px;
+  padding: 10px;
+  background-color: #f6f7fc;
+  border-radius: 20px;
+}
+
+.form-output{
+  width: 500px;
+  height: 300px;
+  padding: 10px;
+  background-color: #f6f7fc;
+  border-radius: 20px;
+}
+
+.button{
+  
+    background-color: #4CAF50; 
+    border: none;
+    border-radius: 30px;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+ 
+}
+
+.submit-button {
+  background-color: #fede3e; 
+  color: black; 
+}
+
+.submit-button:hover {
+  background-color: #000000;
+  color: #fede3e;
+}
+
+input[type=text] {
+  width: 300px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 2px solid #fede3e;
+  border-radius: 4px;
+}
+input[type=date] {
+  width: 300px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 2px solid #fede3e;
+  border-radius: 4px;
+}
+textarea {
+  width: 100%;
+  height: 150px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #fede3e;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  resize: none;
+}
+
+.message-title{
+  padding: 10px 50px 10px 50px;
+  font-size: 30px;
+}
+
+.page-break2 {
+  width: 100%;
+  height: 600px;
+}
+
+/* Footer */
+footer{
+    color: #ffffff;
+    background-color: #333333;
+    padding-top: 20px;
+    padding-bottom: 10px;
+  }
+  
+  .footer_above-row{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 250px 50px 50px;
+  }
+  .footer-logo {
+    width: 150px;
+    height: 150px;
+    padding-top: 20px;
+  }
+
+
+  .footer_bottom-row{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 50px 0 50px;
+  }
+  .footer_email-span {
+    color: #ffffff;
+    text-decoration: underline;
+  }
+
+  .footer-social{
+    width: 20px;
+    height: 20px;
+    padding: 0 10px 0 10px;
+    
+  }
+
+  .footer_logo-youtube{
+    width: 30px;
+    height: 30px;
+  }
